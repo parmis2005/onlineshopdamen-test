@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf8f5;
+  --foreground: #2d1f2e;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-lilac-50: #faf5ff;
+  --color-lilac-100: #f3e8ff;
+  --color-lilac-200: #e9d5ff;
+  --color-lilac-300: #d8b4fe;
+  --color-lilac-400: #c084fc;
+  --color-lilac-500: #a855f7;
+  --color-lilac-600: #9333ea;
+  --color-lilac-700: #7e22ce;
+  --color-lilac-800: #6b21a8;
+  --color-lilac-900: #4a1177;
+
+  --color-blush-50: #fff0f6;
+  --color-blush-100: #ffe0ee;
+  --color-blush-200: #ffc2db;
+  --color-blush-300: #ff94be;
+  --color-blush-400: #ff5da0;
+  --color-blush-500: #f72585;
+  --color-blush-600: #e0006f;
+
+  --color-beige-50: #fdf8f5;
+  --color-beige-100: #f7efe8;
+  --color-beige-200: #ecddd1;
+  --color-beige-300: #dfc8b5;
+  --color-beige-400: #c9a88a;
+  --color-beige-500: #b8906f;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf8f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8b4fe;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
 }
