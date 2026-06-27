@@ -11,122 +11,127 @@ import type { Product } from "@/types";
 const allProducts: Product[] = [
   {
     id: 1,
-    name: "Fließendes Sommerkleid Luna",
-    price: 89.95,
+    name: "Satin-Maxikleid in Rosé",
+    price: 119.95,
     image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600&q=80&auto=format&fit=crop",
-    hoverImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80&auto=format&fit=crop",
+    hoverImage: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&q=80&auto=format&fit=crop",
     category: "Kleider",
     tag: "NEU",
-    colors: ["#f9a8d4", "#c084fc", "#f7efe8"],
+    colors: ["#f9a8d4", "#e9d5ff", "#f7efe8"],
   },
   {
     id: 2,
-    name: "Elegante Bluse Violette",
-    price: 59.95,
-    originalPrice: 89.95,
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80&auto=format&fit=crop",
-    hoverImage: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&q=80&auto=format&fit=crop",
-    category: "Blusen",
+    name: "Lavendel Marlene-Hose",
+    price: 89.95,
+    originalPrice: 129.95,
+    image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=80&auto=format&fit=crop",
+    hoverImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80&auto=format&fit=crop",
+    category: "Hosen",
     tag: "SALE",
-    colors: ["#fff", "#fce7f3", "#e9d5ff"],
+    colors: ["#c084fc", "#f9a8d4", "#f7efe8"],
   },
   {
     id: 3,
-    name: "Midi-Kleid Rosalie mit Spitzendetails",
-    price: 119.0,
+    name: "Linen Hemdblusenkleid Rosa",
+    price: 129.00,
     image: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&q=80&auto=format&fit=crop",
     hoverImage: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80&auto=format&fit=crop",
     category: "Kleider",
     tag: "BESTSELLER",
-    colors: ["#fdf2f8", "#e9d5ff"],
+    colors: ["#fce7f3", "#f7efe8", "#fff"],
   },
   {
     id: 4,
-    name: "Weite Leinenhose Paloma",
-    price: 74.95,
-    image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=80&auto=format&fit=crop",
-    category: "Hosen",
+    name: "Satin-Midirock Lavendel",
+    price: 79.95,
+    image: "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?w=600&q=80&auto=format&fit=crop",
+    hoverImage: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80&auto=format&fit=crop",
+    category: "Röcke",
     tag: "NEU",
-    colors: ["#f7efe8", "#d8b4fe", "#2d1f2e"],
+    colors: ["#e9d5ff", "#d8b4fe", "#c084fc"],
   },
   {
     id: 5,
-    name: "Wickelkleid Serena in Lila",
-    price: 98.0,
-    originalPrice: 149.0,
-    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80&auto=format&fit=crop",
-    hoverImage: "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?w=600&q=80&auto=format&fit=crop",
-    category: "Kleider",
+    name: "Lavendel Oversized-Blazer",
+    price: 139.00,
+    originalPrice: 179.00,
+    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80&auto=format&fit=crop",
+    hoverImage: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&q=80&auto=format&fit=crop",
+    category: "Jacken",
     tag: "SALE",
-    colors: ["#c084fc", "#f9a8d4"],
+    colors: ["#c084fc", "#a855f7", "#f3e8ff"],
   },
   {
     id: 6,
-    name: "Eleganter Jumpsuit Doux",
-    price: 84.95,
+    name: "Rosé Satin-Bluse",
+    price: 74.95,
     image: "https://images.unsplash.com/photo-1485462537746-965f33f8f2fc?w=600&q=80&auto=format&fit=crop",
-    category: "Jumpsuits",
+    hoverImage: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&q=80&auto=format&fit=crop",
+    category: "Blusen",
     tag: "NEU",
-    colors: ["#fce7f3", "#f3e8ff", "#f7efe8"],
+    colors: ["#fce7f3", "#f9a8d4", "#fff"],
   },
   {
     id: 7,
-    name: "Maxirock Florence mit Blumenprint",
-    price: 69.95,
-    image: "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?w=600&q=80&auto=format&fit=crop&crop=bottom",
-    category: "Röcke",
-    colors: ["#fdf2f8", "#f3e8ff"],
+    name: "Weste-Set Lavendel",
+    price: 159.00,
+    image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=80&auto=format&fit=crop&crop=top",
+    hoverImage: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80&auto=format&fit=crop",
+    category: "Sets",
+    tag: "NEU",
+    colors: ["#c084fc", "#e9d5ff"],
   },
   {
     id: 8,
-    name: "Schulterfreies Top Bella",
-    price: 44.95,
-    originalPrice: 64.95,
+    name: "Strick-Set Cream",
+    price: 109.00,
+    originalPrice: 149.00,
     image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80&auto=format&fit=crop",
-    hoverImage: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80&auto=format&fit=crop",
-    category: "Tops",
+    hoverImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80&auto=format&fit=crop",
+    category: "Sets",
     tag: "SALE",
-    colors: ["#fff", "#fce7f3", "#e9d5ff", "#2d1f2e"],
+    colors: ["#f7efe8", "#fff", "#ecddd1"],
   },
   {
     id: 9,
-    name: "Romantische Corsage Amour",
-    price: 79.95,
-    image: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&q=80&auto=format&fit=crop&crop=top",
-    category: "Tops",
+    name: "Rosé Spaghettiträger-Kleid",
+    price: 94.95,
+    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80&auto=format&fit=crop",
+    hoverImage: "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?w=600&q=80&auto=format&fit=crop",
+    category: "Kleider",
     tag: "NEU",
-    colors: ["#fce7f3", "#c084fc"],
+    colors: ["#f9a8d4", "#fce7f3"],
   },
   {
     id: 10,
-    name: "Plissee-Rock Arielle",
-    price: 54.95,
-    image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=80&auto=format&fit=crop&crop=bottom",
-    category: "Röcke",
-    colors: ["#f9a8d4", "#f3e8ff", "#f7efe8"],
+    name: "Beige Wide-Leg Hose",
+    price: 84.95,
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80&auto=format&fit=crop",
+    category: "Hosen",
+    colors: ["#f7efe8", "#ecddd1", "#fff"],
   },
   {
     id: 11,
-    name: "Blazer Chloe in Powder",
-    price: 129.0,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80&auto=format&fit=crop&crop=top",
-    category: "Jacken",
+    name: "Lavendel Blazer-Hosen-Set",
+    price: 219.00,
+    image: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&q=80&auto=format&fit=crop&crop=top",
+    category: "Sets",
     tag: "BESTSELLER",
-    colors: ["#f7efe8", "#e9d5ff"],
+    colors: ["#c084fc", "#e9d5ff"],
   },
   {
     id: 12,
-    name: "Trägerkleid Fiori mit Rüschen",
-    price: 92.0,
-    originalPrice: 119.0,
+    name: "Rosa Leinenkleid mit Gürtel",
+    price: 99.00,
+    originalPrice: 139.00,
     image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&q=80&auto=format&fit=crop",
     category: "Kleider",
     tag: "SALE",
-    colors: ["#fdf2f8", "#f9a8d4"],
+    colors: ["#fce7f3", "#f9a8d4"],
   },
 ];
 
-const categories = ["Alle", "Kleider", "Blusen", "Tops", "Hosen", "Röcke", "Jumpsuits", "Jacken"];
+const categories = ["Alle", "Kleider", "Blusen", "Röcke", "Hosen", "Jacken", "Sets"];
 const sortOptions = ["Empfohlen", "Neu eingetroffen", "Preis aufsteigend", "Preis absteigend", "Bestseller"];
 
 export default function ProduktsPage() {
@@ -195,23 +200,14 @@ export default function ProduktsPage() {
                     <option key={o}>{o}</option>
                   ))}
                 </select>
-                <ChevronDown
-                  size={13}
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[#999] pointer-events-none"
-                />
+                <ChevronDown size={13} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[#999] pointer-events-none" />
               </div>
 
               <div className="hidden md:flex items-center gap-1.5 border border-[#e9d5ff] rounded-sm p-1">
-                <button
-                  onClick={() => setGridCols(4)}
-                  className={`p-1.5 rounded ${gridCols === 4 ? "bg-[#f3e8ff] text-[#7e22ce]" : "text-[#999]"}`}
-                >
+                <button onClick={() => setGridCols(4)} className={`p-1.5 rounded ${gridCols === 4 ? "bg-[#f3e8ff] text-[#7e22ce]" : "text-[#999]"}`}>
                   <LayoutGrid size={15} />
                 </button>
-                <button
-                  onClick={() => setGridCols(3)}
-                  className={`p-1.5 rounded ${gridCols === 3 ? "bg-[#f3e8ff] text-[#7e22ce]" : "text-[#999]"}`}
-                >
+                <button onClick={() => setGridCols(3)} className={`p-1.5 rounded ${gridCols === 3 ? "bg-[#f3e8ff] text-[#7e22ce]" : "text-[#999]"}`}>
                   <Grid2X2 size={15} />
                 </button>
               </div>
@@ -223,11 +219,7 @@ export default function ProduktsPage() {
             </div>
           </div>
 
-          <div
-            className={`grid grid-cols-2 gap-4 md:gap-6 ${
-              gridCols === 4 ? "md:grid-cols-4" : "md:grid-cols-3"
-            }`}
-          >
+          <div className={`grid grid-cols-2 gap-4 md:gap-6 ${gridCols === 4 ? "md:grid-cols-4" : "md:grid-cols-3"}`}>
             {sorted.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

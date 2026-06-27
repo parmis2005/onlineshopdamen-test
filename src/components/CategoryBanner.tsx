@@ -3,27 +3,27 @@ import Image from "next/image";
 
 const categories = [
   {
-    name: "Kleider",
-    sub: "123 Styles",
-    image: "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?w=800&q=80&auto=format&fit=crop",
+    name: "Kleider & Sets",
+    sub: "Satin · Leinen · Midi",
+    image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=800&q=80&auto=format&fit=crop",
     href: "/produkte",
   },
   {
     name: "Blusen & Tops",
-    sub: "87 Styles",
+    sub: "Satin · Seide · Rippstrick",
     image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80&auto=format&fit=crop",
     href: "/produkte",
   },
   {
     name: "Röcke & Hosen",
-    sub: "64 Styles",
+    sub: "Marlene · Palazzo · Midi",
     image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&q=80&auto=format&fit=crop",
     href: "/produkte",
   },
   {
-    name: "Accessoires",
-    sub: "211 Styles",
-    image: "https://images.unsplash.com/photo-1523779105320-d1cd346ff52b?w=800&q=80&auto=format&fit=crop",
+    name: "Blazer & Jacken",
+    sub: "Oversize · Structured",
+    image: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=800&q=80&auto=format&fit=crop",
     href: "/produkte",
   },
 ];
