@@ -25,12 +25,12 @@ export default function ProductCard({ product }: Props) {
       onMouseLeave={() => setHovered(false)}
     >
       {/* Image container */}
-      <div className='relative overflow-hidden rounded-sm bg-[#f3e8ff]/30 aspect-[3/4]'>
+      <div className='relative overflow-hidden rounded-[1.1rem] bg-gradient-to-br from-[#fff7fb] via-[#faf5ff] to-[#f7efe8] aspect-[3/4] shadow-[0_12px_35px_rgba(91,33,182,0.08)]'>
         <Image
           src={product.image}
           alt={product.name}
           fill
-          className={`object-cover transition-all duration-700 ${
+          className={`object-cover transition-all duration-700 scale-[1.02] ${
             hovered && product.hoverImage ? 'opacity-0' : 'opacity-100'
           }`}
           sizes='(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw'
@@ -50,17 +50,17 @@ export default function ProductCard({ product }: Props) {
         {/* Tags */}
         <div className='absolute top-3 left-3 flex flex-col gap-1.5'>
           {product.tag === 'NEU' && (
-            <span className='bg-[#7e22ce] text-white text-[10px] font-bold tracking-widest px-2.5 py-1'>
+            <span className='bg-[#b4236f] text-white text-[10px] font-bold tracking-widest px-2.5 py-1 rounded-full'>
               NEU
             </span>
           )}
           {product.tag === 'SALE' && discount && (
-            <span className='bg-[#e0006f] text-white text-[10px] font-bold tracking-widest px-2.5 py-1'>
+            <span className='bg-[#e0006f] text-white text-[10px] font-bold tracking-widest px-2.5 py-1 rounded-full'>
               -{discount}%
             </span>
           )}
           {product.tag === 'BESTSELLER' && (
-            <span className='bg-[#2d1f2e] text-white text-[10px] font-bold tracking-widest px-2.5 py-1'>
+            <span className='bg-[#2d1f2e] text-white text-[10px] font-bold tracking-widest px-2.5 py-1 rounded-full'>
               BESTSELLER
             </span>
           )}
@@ -74,14 +74,14 @@ export default function ProductCard({ product }: Props) {
         >
           <button
             onClick={() => setWished(!wished)}
-            className='w-9 h-9 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-[#fce7f3] transition-colors'
+            className='w-9 h-9 bg-white/95 rounded-full flex items-center justify-center shadow-md hover:bg-[#ffe0ee] transition-colors'
           >
             <Heart
               size={16}
               className={wished ? 'fill-[#e0006f] text-[#e0006f]' : 'text-[#2d1f2e]'}
             />
           </button>
-          <button className='w-9 h-9 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-[#f3e8ff] transition-colors'>
+          <button className='w-9 h-9 bg-white/95 rounded-full flex items-center justify-center shadow-md hover:bg-[#f3e8ff] transition-colors'>
             <Eye size={16} className='text-[#2d1f2e]' />
           </button>
         </div>
@@ -92,7 +92,7 @@ export default function ProductCard({ product }: Props) {
             hovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
           }`}
         >
-          <button className='w-full bg-[#2d1f2e]/90 hover:bg-[#7e22ce] text-white py-3 text-xs font-semibold tracking-widest uppercase flex items-center justify-center gap-2 transition-colors backdrop-blur-sm'>
+          <button className='w-full bg-[#2d1f2e]/88 hover:bg-[#b4236f] text-white py-3 text-xs font-semibold tracking-widest uppercase flex items-center justify-center gap-2 transition-colors backdrop-blur-sm'>
             <ShoppingBag size={14} />
             In den Warenkorb
           </button>
@@ -101,18 +101,24 @@ export default function ProductCard({ product }: Props) {
 
       {/* Product info */}
       <div className='pt-3 pb-1'>
-        <p className='text-xs text-[#a855f7] tracking-widest uppercase mb-1 font-medium'>
+        <p className='text-[10px] text-[#d9468c] tracking-[0.28em] uppercase mb-1.5 font-medium'>
           {product.category}
         </p>
         <Link href={`/produkte/${product.id}`}>
-          <h3 className='text-sm md:text-base font-medium text-[#2d1f2e] hover:text-[#7e22ce] transition-colors leading-snug line-clamp-2'>
+          <h3 className='text-sm md:text-base font-medium text-[#2d1f2e] hover:text-[#b4236f] transition-colors leading-snug line-clamp-2'>
             {product.name}
           </h3>
         </Link>
 
+        {product.description && (
+          <p className='mt-1.5 text-[12px] leading-relaxed text-[#7b6d75] line-clamp-2'>
+            {product.description}
+          </p>
+        )}
+
         {/* Colors */}
         {product.colors && (
-          <div className='flex gap-1.5 mt-1.5'>
+          <div className='flex gap-1.5 mt-2'>
             {product.colors.map((c) => (
               <div
                 key={c}
@@ -125,7 +131,7 @@ export default function ProductCard({ product }: Props) {
         )}
 
         {/* Price */}
-        <div className='flex items-center gap-2 mt-2'>
+        <div className='flex items-center gap-2 mt-2.5'>
           <span
             className={`text-base font-semibold ${
               product.tag === 'SALE' ? 'text-[#e0006f]' : 'text-[#2d1f2e]'

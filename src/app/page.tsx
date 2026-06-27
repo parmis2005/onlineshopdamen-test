@@ -16,14 +16,14 @@ export default function Home() {
         <CategoryBanner />
         <ProductGrid
           title='Neuheiten'
-          subtitle='Die neuesten Pieces unserer Sommerkollektion – frisch eingetroffen'
+          subtitle='Die neuesten Pieces unserer femininen Kollektion – weich, elegant und modern'
           limit={8}
           showLink={true}
         />
         <PromoBanner />
         <ProductGrid
           title='Bestseller'
-          subtitle='Unsere meistgeliebten Styles – von Kundinnen immer wieder gewählt'
+          subtitle='Unsere meistgeliebten Styles mit ruhiger Eleganz und fließenden Linien'
           limit={4}
           showLink={false}
         />

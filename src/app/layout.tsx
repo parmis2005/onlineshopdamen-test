@@ -16,8 +16,9 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'VELORA – Feminine Mode & Stil',
-  description: 'Entdecke feminine Mode, elegante Kleider und zeitlose Styles bei VELORA. Dein Online-Shop für Frauen mit Stil.',
-  keywords: 'feminine mode, kleider, damenbekleidung, online shop, elegant',
+  description:
+    'Entdecke feminine Mode mit sanften Farben, eleganten Kleiderlooks und modernem Tailoring bei VELORA.',
+  keywords: 'feminine mode, kleider, blusen, tailoring, damenbekleidung, online shop',
 };
 
 export default function RootLayout({

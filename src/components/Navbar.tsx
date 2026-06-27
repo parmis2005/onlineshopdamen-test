@@ -16,27 +16,27 @@ const navLinks = [
   {
     label: 'Neuheiten',
     href: '/neuheiten',
-    sub: ['Alle Neuheiten', 'Kleider', 'Tops', 'Hosen', 'Accessoires'],
+    sub: ['Alle Neuheiten', 'Kleider', 'Blusen', 'Tailoring', 'Hosen'],
   },
   {
     label: 'Kleider',
     href: '/produkte',
-    sub: ['Midi-Kleider', 'Maxi-Kleider', 'Mini-Kleider', 'Abendkleider', 'Casual'],
+    sub: ['Midi-Kleider', 'Maxi-Kleider', 'Hemdblusenkleider', 'Abendkleider', 'Casual'],
   },
   {
-    label: 'Oberteile',
+    label: 'Blusen & Tops',
     href: '/produkte',
-    sub: ['Blusen', 'T-Shirts', 'Pullover', 'Strickjacken'],
+    sub: ['Blusen', 'Tops', 'Satinblusen', 'Stricktops'],
+  },
+  {
+    label: 'Tailoring',
+    href: '/produkte',
+    sub: ['Blazer', 'Vests', 'Sets', 'Wide-Leg Hosen'],
   },
   {
     label: 'Hosen & Röcke',
     href: '/produkte',
-    sub: ['Hosen', 'Jeans', 'Röcke', 'Shorts'],
-  },
-  {
-    label: 'Accessoires',
-    href: '/produkte',
-    sub: ['Taschen', 'Schmuck', 'Gürtel', 'Schals'],
+    sub: ['Hosen', 'Röcke', 'Satinröcke', 'Palazzo'],
   },
   { label: 'SALE', href: '/sale', sub: [] },
 ];
@@ -56,8 +56,8 @@ export default function Navbar() {
   return (
     <>
       {/* Top announcement bar */}
-      <div className='bg-[#7e22ce] text-white text-center text-xs py-2 tracking-widest font-light'>
-        KOSTENLOSER VERSAND AB 59€ &nbsp;|&nbsp; GRATIS RÜCKVERSAND &nbsp;|&nbsp; NEU: SOMMERKOLLEKTION 2025
+      <div className='bg-[#b4236f] text-white text-center text-xs py-2 tracking-widest font-light'>
+        KOSTENLOSER VERSAND AB 59€ &nbsp;|&nbsp; GRATIS RÜCKVERSAND &nbsp;|&nbsp; NEUE FEMININE KOLLEKTION 2025
       </div>
 
       <header
@@ -84,7 +84,7 @@ export default function Navbar() {
                 className='text-2xl md:text-3xl tracking-[0.15em] font-bold'
                 style={{ fontFamily: 'var(--font-playfair)' }}
               >
-                <span className='text-[#7e22ce]'>V</span>
+                <span className='text-[#b4236f]'>V</span>
                 <span className='text-[#2d1f2e]'>ELORA</span>
               </span>
             </Link>
@@ -103,7 +103,7 @@ export default function Navbar() {
                     className={`flex items-center gap-0.5 px-3 py-2 text-sm font-medium tracking-wide transition-colors ${
                       link.label === 'SALE'
                         ? 'text-[#e0006f] font-semibold'
-                        : 'text-[#2d1f2e] hover:text-[#7e22ce]'
+                        : 'text-[#2d1f2e] hover:text-[#b4236f]'
                     }`}
                   >
                     {link.label}
@@ -117,12 +117,12 @@ export default function Navbar() {
 
                   {/* Dropdown */}
                   {link.sub.length > 0 && activeDropdown === link.label && (
-                    <div className='absolute top-full left-0 mt-0 w-52 bg-white shadow-xl border-t-2 border-[#a855f7] py-2 z-50'>
+                    <div className='absolute top-full left-0 mt-0 w-52 bg-white shadow-xl border-t-2 border-[#e85d9a] py-2 z-50'>
                       {link.sub.map((sub) => (
                         <Link
                           key={sub}
                           href={link.href}
-                          className='block px-5 py-2.5 text-sm text-[#2d1f2e] hover:bg-[#f3e8ff] hover:text-[#7e22ce] transition-colors'
+                          className='block px-5 py-2.5 text-sm text-[#2d1f2e] hover:bg-[#fff0f6] hover:text-[#b4236f] transition-colors'
                         >
                           {sub}
                         </Link>
@@ -137,20 +137,20 @@ export default function Navbar() {
             <div className='flex items-center gap-2 md:gap-3'>
               <button
                 onClick={() => setSearchOpen(!searchOpen)}
-                className='p-2 text-[#2d1f2e] hover:text-[#7e22ce] transition-colors'
+                className='p-2 text-[#2d1f2e] hover:text-[#b4236f] transition-colors'
               >
                 <Search size={20} />
               </button>
-              <Link href='#' className='hidden md:block p-2 text-[#2d1f2e] hover:text-[#7e22ce] transition-colors'>
+              <Link href='#' className='hidden md:block p-2 text-[#2d1f2e] hover:text-[#b4236f] transition-colors'>
                 <User size={20} />
               </Link>
-              <Link href='#' className='p-2 text-[#2d1f2e] hover:text-[#7e22ce] transition-colors relative'>
+              <Link href='#' className='p-2 text-[#2d1f2e] hover:text-[#b4236f] transition-colors relative'>
                 <Heart size={20} />
                 <span className='absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#e0006f] text-white text-[9px] rounded-full flex items-center justify-center font-bold'>
                   3
                 </span>
               </Link>
-              <Link href='#' className='p-2 text-[#2d1f2e] hover:text-[#7e22ce] transition-colors relative'>
+              <Link href='#' className='p-2 text-[#2d1f2e] hover:text-[#b4236f] transition-colors relative'>
                 <ShoppingBag size={20} />
                 <span className='absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#7e22ce] text-white text-[9px] rounded-full flex items-center justify-center font-bold'>
                   2
@@ -167,12 +167,12 @@ export default function Navbar() {
               <input
                 autoFocus
                 type='text'
-                placeholder='Suche nach Kleidern, Blusen, Accessoires …'
-                className='w-full border border-[#d8b4fe] rounded-full px-5 py-3 pr-12 text-sm outline-none focus:border-[#a855f7] bg-[#faf5ff]'
+                placeholder='Suche nach Kleidern, Blusen, Tailoring …'
+                className='w-full border border-[#e9d5ff] rounded-full px-5 py-3 pr-12 text-sm outline-none focus:border-[#e85d9a] bg-[#faf5ff]'
               />
               <Search
                 size={18}
-                className='absolute right-4 top-1/2 -translate-y-1/2 text-[#a855f7]'
+                className='absolute right-4 top-1/2 -translate-y-1/2 text-[#e85d9a]'
               />
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function Navbar() {
                 className={`block px-6 py-4 text-sm font-medium border-b border-[#f3e8ff] ${
                   link.label === 'SALE'
                     ? 'text-[#e0006f]'
-                    : 'text-[#2d1f2e] hover:text-[#7e22ce]'
+                    : 'text-[#2d1f2e] hover:text-[#b4236f]'
                 }`}
               >
                 {link.label}

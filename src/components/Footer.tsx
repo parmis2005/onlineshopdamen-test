@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { Heart } from "lucide-react";
 
 const footerLinks = {
   Shop: [
     { label: 'Neuheiten', href: '/neuheiten' },
     { label: 'Kleider', href: '/produkte' },
-    { label: 'Oberteile', href: '/produkte' },
+    { label: 'Blusen & Tops', href: '/produkte' },
+    { label: 'Tailoring', href: '/produkte' },
     { label: 'Hosen & Röcke', href: '/produkte' },
-    { label: 'Accessoires', href: '/produkte' },
     { label: 'Sale', href: '/sale' },
   ],
   Service: [
@@ -39,13 +38,13 @@ export default function Footer() {
                 className='text-2xl font-bold tracking-[0.15em]'
                 style={{ fontFamily: 'var(--font-playfair)' }}
               >
-                <span className='text-[#c084fc]'>V</span>
+                <span className='text-[#f9a8d4]'>V</span>
                 <span className='text-white'>ELORA</span>
               </span>
             </Link>
             <p className='text-sm text-white/50 leading-relaxed mb-6'>
-              Feminine Mode für Frauen, die wissen was sie wollen. Zeitlos,
-              elegant und nachhaltig gedacht.
+              Feminine Mode für Frauen, die weiche Farben, klare Linien und elegante
+              Silhouetten lieben.
             </p>
             <div className="flex gap-3">
               {["Instagram", "Facebook", "YouTube", "Pinterest"].map((label) => (
