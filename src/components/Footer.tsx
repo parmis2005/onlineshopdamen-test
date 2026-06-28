@@ -46,18 +46,6 @@ export default function Footer() {
               Feminine Mode für Frauen, die weiche Farben, klare Linien und elegante
               Silhouetten lieben.
             </p>
-            <div className="flex gap-3">
-              {["Instagram", "Facebook", "YouTube", "Pinterest"].map((label) => (
-                <Link
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/50 hover:border-[#c084fc] hover:text-[#c084fc] transition-colors text-[10px] font-bold"
-                >
-                  {label[0]}
-                </Link>
-              ))}
-            </div>
           </div>
 
           {/* Links */}
