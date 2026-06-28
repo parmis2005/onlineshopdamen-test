@@ -69,3 +69,7 @@ html {
   background: #f9a8d4;
   color: #1f1326;
 }
+
+[data-interaction-disabled='true'] {
+  cursor: default !important;
+}

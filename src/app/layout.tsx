@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
+import DisableInteractions from '@/components/DisableInteractions';
 import './globals.css';
 
 const inter = Inter({
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang='de' className={`${inter.variable} ${playfair.variable} h-full`}>
       <body className='min-h-full flex flex-col bg-[#fdf8f5] text-[#2d1f2e]'>
+        <DisableInteractions />
         {children}
       </body>
     </html>
